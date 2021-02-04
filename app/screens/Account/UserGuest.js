@@ -5,7 +5,6 @@ import { useNavigation } from "@react-navigation/native";
 
 const UserGuest = () => {
   const navigation = useNavigation();
-  console.log(navigation);
 
   return (
     <ScrollView centerContent={true} style={styles.viewBody}>
@@ -25,7 +24,7 @@ const UserGuest = () => {
           buttonStyle={styles.btnStyle}
           containerStyle={styles.btnContainer}
           title="Ver tu perfil"
-          onPress={() => console.log("click!!!")}
+          onPress={() => navigation.navigate("login")}
         />
       </View>
     </ScrollView>
